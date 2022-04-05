@@ -1,20 +1,25 @@
-const canvas = document.getElementById("canvas");
+const canvas = document.querySelector("canvas");
+
+const ctx = canvas.getContext("2d");
+
 canvas.width = 800;
 canvas.height = 560;
 
-const inv = canvas.getContext("2d");
 
 class Inventory {
   constructor() {
+    this.position = {
+      x:0,
+      y:0
+    }
     this.width = 300;
     this.height = 70;
   }
   draw() {
-    inv.fillStyle = "grey";
-    inv.fillRect(490, 10, this.width, this.height);
+    ctx.fillStyle = 'black';
+    ctx.fillRect(this.position.x, this.position.y , this.width, this.height);
   }
 }
 
 const inventory = new Inventory();
-
 inventory.draw();
