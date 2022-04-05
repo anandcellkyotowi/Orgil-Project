@@ -1,11 +1,16 @@
-const canvas = document.getElementById("canvas");
+const canvas = document.querySelector("canvas");
+
+const ctx = canvas.getContext("2d");
+
 canvas.width = 800;
 canvas.height = 560;
 
-const inv = canvas.getContext("2d");
-
 class Inventory {
   constructor() {
+    this.position = {
+      x: 0,
+      y: 0,
+    };
     this.width = 300;
     this.height = 70;
   }
@@ -16,5 +21,4 @@ class Inventory {
 }
 
 const inventory = new Inventory();
-
 inventory.draw();
