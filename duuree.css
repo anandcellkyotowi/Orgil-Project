@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#canvas {
+    width: 1004px;
+    height: 444px;
+    background-color: rgb(79, 79, 79);
+    border: 2px solid blue;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.dialogue {
+    background-color: white;
+    border: 4px black solid;
+    border-radius: 4px;
+    color: black;
+    position: absolute;
+    bottom: 10px;
+    left: 40px;
+    height: 102px;
+    width: 680px;
+    padding: 10px;
+    font-weight: 300;
+}
+
+.nondialogue {
+    background-color: rgb(79, 79, 79);
+    border: none;
+    color: rgb(79, 79, 79);
+    position: relative;
+    bottom: 10px;
+    left: 40px;
+    height: 110px;
+    width: 680px;
+}
+
+#tutorialBox {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    height: 102px;
+    width: 680px;
+    padding: 10px;
+    font-weight: 300;
+    color: black;
+}
