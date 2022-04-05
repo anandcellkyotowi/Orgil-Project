@@ -10,7 +10,7 @@ class Inventory {
     this.height = 70;
   }
   draw() {
-    inv.fillStyle = "grey";
+    inv.fillStyle = "green";
     inv.fillRect(490, 10, this.width, this.height);
   }
 }
